@@ -3,7 +3,9 @@
 <div img="./assets/cart.jpg" class="cart-item text-dark" *ngFor="let item of items">
     <span>{{ item.name }} </span>
     <span>{{ item.price | currency }}</span>
+
 </div>
+
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
 
     <div>
