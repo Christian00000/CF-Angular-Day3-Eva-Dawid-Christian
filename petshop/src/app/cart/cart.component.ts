@@ -18,8 +18,9 @@ export class CartComponent implements OnInit {
    }
  
 
-  ngOnInit() {
+  ngOnInit() :void {
     this.items = this.cartService.getItems();
+    console.log(this.items)
   }
   onSubmit(customerData) {
     // Process checkout data here

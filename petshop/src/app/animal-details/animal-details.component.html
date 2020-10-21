@@ -6,29 +6,7 @@
         <p class="card-text ">I´m {{ animal.description }} </p>
         <p> For {{ animal.price | currency }} i will be yours ;-)
         </p>
-        <a href="" class="btn btn-primary">back to current animals</a>
+        <a routerLink="" class="btn btn-primary text-dark">back to current animals</a>
         <p><button class="btn btn-danger" (click)="addToCart(animal)">Buy</button></p>
     </div>
-</div>
-
-
-
-
-
-<div *ngIf="animal">
-
-
-</div>
-
-<div *ngFor="let animal of animal ; index as animalId">
-
-    <h3>
-        <a [routerLink]="['/animals', animalId]">
-     {{ animal.name }}
-   </a>
-    </h3>
-    <p *ngIf="animal.description">
-        Description: {{ animal.description }}
-    </p>
-
 </div>
