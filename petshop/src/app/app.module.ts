@@ -14,12 +14,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     AnimalListComponent,
     AnimalDetailsComponent,
-    CartComponent,
-    ReactiveFormsModule
+    CartComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
