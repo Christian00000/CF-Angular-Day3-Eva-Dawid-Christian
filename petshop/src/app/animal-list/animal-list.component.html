@@ -1,0 +1,16 @@
+<div>
+    <h2>Our current Animals</h2>
+
+    <div *ngFor="let animal of animals ; index as animalId ">
+
+        <h1>
+            <a [routerLink]="['/animals', animalId]">
+            {{ animal.name }}
+          </a>
+        </h1>
+        <p *ngIf="animal.description">
+            Description: {{ animal.description }}
+        </p>
+
+    </div>
+</div>
